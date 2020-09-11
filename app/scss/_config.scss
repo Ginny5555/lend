@@ -1,0 +1,218 @@
+// USER VARIABLES SECTION
+
+$accent: orange; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: rgb(8, 129, 119);
+$textcolor2: #fff; // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$roboto: Roboto, sans-serif; // Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    // font-display: swap; // Uncomment to initially display system fonts
+    src: local($fname), url($furl) format("woff2");
+  }
+}
+
+@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
+@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+@include font(
+  "Roboto",
+  italic,
+  700,
+  "../fonts/roboto-bolditalic-webfont.woff2"
+);
+
+@media (min-width: 320px) {
+  body {
+    .comunity {
+      .data__time.ft {
+        top: -5px;
+      }
+    }
+    width: 770px;
+    & p {
+      font-size: 12px;
+    }
+    & h1 {
+      font-size: 18px !important;
+    }
+  }
+  .data__box-d {
+    overflow: auto;
+  }
+  .btn {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) {
+  body {
+    width: 900px;
+    & p {
+      font-size: 12px;
+    }
+    & h1 {
+      font-size: 18px !important;
+    }
+  }
+  .data__box-d {
+    overflow: auto;
+  }
+}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) {
+  body {
+    width: 900px;
+    & p {
+      font-size: 12px;
+    }
+    & h1 {
+      font-size: 20px !important;
+    }
+  }
+  .data__box-d {
+    overflow: auto;
+  }
+  .btn {
+    font-size: 20px;
+  }
+}
+
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) {
+  body {
+    width: 1200px;
+    & p {
+      font-size: 12px;
+    }
+    & h1 {
+      font-size: 20px !important;
+    }
+  }
+  .data__box-d {
+    overflow: auto;
+  }
+  .btn {
+    font-size: 20px;
+  }
+}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {
+  body {
+    width: 1500px;
+    & p {
+      font-size: 14px;
+    }
+    & h1 {
+      font-size: 30px !important;
+    }
+  }
+  .data__box-d {
+    overflow: auto;
+  }
+}
+@media (min-width: 1500px) {
+  body {
+    width: 2000px;
+    & p {
+      font-size: 16px;
+    }
+    & h1 {
+      font-size: 30px !important;
+    }
+  }
+  .data__box-d {
+    overflow: auto;
+  }
+}
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+body {
+  font-family: $roboto;
+  font-size: $fontsize;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  color: $textcolor;
+  h1 {
+    margin-top: 5%;
+    color: $textcolor;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-top: 5%;
+    color: $textcolor;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $textcolor;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+    p {
+      z-index: 2000;
+    }
+  }
+  hr {
+    width: 20%;
+    border-bottom: 2px solid $textcolor;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+}
