@@ -87,18 +87,64 @@ $gutter: $grid-gutter-width;
 }
 
 // Средние девайсы («таблетки», >= 768px)
-@media (min-width: 768px) {
-  body {
-    width: 900px;
-    & p {
-      font-size: 12px;
-    }
+@media (max-width: 768px) {
+  .news-box {
     & h1 {
-      font-size: 20px !important;
+      width: 100% !important;
+    }
+    & p {
+      width: 100% !important;
+    }
+  }
+  .comunity-img {
+    height: fit-content;
+  }
+  .main-menu {
+    flex-direction: row !important;
+    padding: 0px 3px !important;
+    & a {
+      font-size: 8px;
+      padding: 0 3px !important;
+    }
+  }
+  & h2 {
+    font-size: 16px !important;
+  }
+  .education {
+    flex-flow: wrap;
+    &-box {
+      width: 100% !important;
+    }
+  }
+
+  .enviroment-box {
+    flex-wrap: wrap;
+    & h1 {
+      font-size: 18px !important;
+    }
+  }
+  #timer2d1bf449885aa1d917ed5a44382b546e {
+    display: none;
+  }
+
+  .data__box {
+    flex-wrap: wrap !important;
+  }
+  .data__time {
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 18px !important;
+  }
+  body {
+    width: 100%;
+    & p {
+      font-size: 12px !important;
     }
   }
   .data__box-d {
     overflow: auto;
+    width: 100% !important;
   }
   .btn {
     font-size: 20px;
