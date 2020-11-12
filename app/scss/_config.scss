@@ -71,7 +71,7 @@ $gutter: $grid-gutter-width;
     font-size: 20px;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   body {
     width: 900px;
     & p {
@@ -83,6 +83,9 @@ $gutter: $grid-gutter-width;
   }
   .data__box-d {
     overflow: auto;
+  }
+  #timer2d1bf449885aa1d917ed5a44382b546e {
+    display: none;
   }
 }
 
@@ -122,9 +125,6 @@ $gutter: $grid-gutter-width;
     & h1 {
       font-size: 18px !important;
     }
-  }
-  #timer2d1bf449885aa1d917ed5a44382b546e {
-    display: none;
   }
 
   .data__box {
