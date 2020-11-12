@@ -97,6 +97,7 @@ $gutter: $grid-gutter-width;
     }
     & p {
       width: 100% !important;
+
     }
   }
   .comunity-img {
@@ -120,6 +121,7 @@ $gutter: $grid-gutter-width;
     }
   }
 
+
   .enviroment-box {
     flex-wrap: wrap;
     & h1 {
@@ -127,11 +129,17 @@ $gutter: $grid-gutter-width;
     }
   }
 
+  #timer2d1bf449885aa1d917ed5a44382b546e {
+    display: none;
+  }
+
+
   .data__box {
     flex-wrap: wrap !important;
   }
   .data__time {
     width: 100% !important;
+
     & h1 {
       background: #f6f6f6;
       opacity: 0.8;
@@ -146,6 +154,7 @@ $gutter: $grid-gutter-width;
       background: #f6f6f6;
       opacity: 0.8;
     }
+
   }
   h1 {
     font-size: 18px !important;
