@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -13,12 +14,14 @@ body {
 }
 
 .header {
-  position: fixed;
   top: 0;
-  width: 80%;
-
-  padding: 10px;
-  z-index: 100;
+  width: 100%;
+  padding: 20px;
+  height: 10%;
+  z-index: 2000;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: $textcolor;
 }
 
 .header-conteiner {
@@ -27,57 +30,67 @@ body {
   padding-top: 32px;
   padding-bottom: 33px;
 }
-
+.dropdown {
+  display: none;
+}
 .main-menu {
-  width: 10%;
+  width: 80%;
   display: flex;
-  padding: 20px 20px;
+
   justify-content: space-between;
 
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  flex-direction: column;
+  margin: 0 auto;
+  flex-direction: row;
 }
-
+.btn {
+  height: auto;
+  margin: 7% auto;
+}
 .menu-link {
   text-decoration: none;
   font-family: sans-serif;
-
+  z-index: 2000;
   line-height: 22px;
-  color: #828282;
-  margin-bottom: 35px;
+  color: $textcolor2;
+  display: flex;
+  align-items: center;
 }
 
 .main-menu .menu-link.active {
-  color: #070707;
+  color: $accent;
 }
-
+.carousel {
+  width: 100%;
+  & img {
+    height: 100%;
+    position: relative;
+  }
+}
 .data {
   @include flex-column;
   align-items: center;
   position: relative;
-
-  height: 100%;
+  height: 80%;
 
   width: 100%;
 
   &__time {
     position: absolute;
     height: 60%;
-    top: 10%;
+    top: 20%;
     align-items: center;
     @include flex-column;
     text-align: center;
-    width: 60%;
+    width: 100%;
     &.ft {
       height: 60%;
+      position: relative;
     }
   }
   &__box {
     @include flex;
     width: 100%;
-    height: 65%;
+    height: 100%;
     &.new {
       justify-content: space-around;
       align-items: center;
@@ -85,24 +98,40 @@ body {
     }
     &-d {
       @include flex-column;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 70%;
-      background: #f6f6f6;
-      opacity: 0.8;
-      color: black;
-      border-radius: 10px;
-      margin: 20px;
-      padding: 10px;
+
+      height: 280px;
+
+      align-items: start;
+      & .mg {
+        height: 60px;
+        width: 70px !important;
+      }
+      & p {
+        text-align: left;
+        height: fit-content;
+      }
     }
   }
 }
-
+.orange {
+  text-align: left;
+  color: $accent !important;
+}
 .technologies {
-  background: #f6f6f6;
   height: 100%;
   @include flex-column;
   text-align: center;
   justify-content: space-around;
+  height: fit-content;
+  &-p {
+    @include flex-column;
+    text-align: left;
+    & h1 {
+      color: $textcolor;
+    }
+  }
 }
 
 .title {
@@ -113,34 +142,32 @@ body {
 }
 
 .education {
-  @include flex;
-  justify-content: space-between;
-  width: 100%;
-
-  & img {
-    height: 70%;
-    width: 50%;
-  }
-
-  &-box {
-    @include flex-column;
-    align-items: flex-end;
-    justify-content: right;
-    width: 40%;
+  height: 20% !important;
+  background: $accent;
+  & h2 {
+    background: $accent;
+    padding: 2% 5% 0 0;
+    width: 71%;
   }
 }
 .enviroment {
-  padding: 10%;
+  height: auto;
+
   width: 100%;
   @include flex-column;
   justify-content: space-around;
   text-align: center;
-
+  text-align: left;
+  & h2 {
+    color: $textcolor !important;
+    margin-bottom: 5%;
+  }
   &-box {
     @include flex;
     justify-content: space-around;
     & h1 {
-      font-size: 42px;
+      font-size: 50px;
+      letter-spacing: 0.025em;
     }
   }
 }
@@ -166,56 +193,85 @@ body {
   height: 10%;
   margin: 0 auto;
 }
+label {
+  height: 5%;
+}
+#form {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.form-group {
+  width: 80%;
+  margin: 0 auto;
+  @include flex-column;
+}
 
+.form-control {
+  margin: 0 auto;
+  background: rgba(28, 58, 116, 0.2) !important;
+  border-radius: 5px;
+}
 .news {
   width: 100%;
-  background-color: #f6f6f6;
-  height: 100%;
-  @include flex;
-  justify-content: space-between;
 
-  text-align: center;
-  &-box {
-    @include flex;
-    justify-content: space-around;
-    & p {
-      text-align: left;
-      width: 30%;
-    }
+  height: 100%;
+  & img {
+    width: 100%;
+  }
+
+  &-form {
+    position: absolute;
+
+    width: 40%;
     & h1 {
-      width: 30%;
-      text-align: left;
+      height: 10%;
+      color: $textcolor !important;
     }
-  }
-  & a:hover {
-    opacity: 0.1;
-  }
-  &-soc {
-    & img {
-      width: 40px;
-      height: 40px;
+    &__f {
+      background: #fffefe;
+      border-radius: 20px;
+      height: 80%;
+      position: relative;
     }
   }
 }
+
 .container {
-  width: 95%;
-  margin: 0 auto;
+  width: 85%;
+  height: fit-content;
 }
 .comunity {
   width: 100%;
-
-  height: 50%;
-  display: flex;
+  background: $textcolor;
+  height: 30%;
+  @include flex-column;
+  margin: 0;
   justify-content: center;
-  text-align: center;
+
   position: relative;
-  &.container {
-    @include flex-column;
-    top: -100%;
+  &-a {
+    height: fit-content;
+
+    margin: 2%;
   }
-  &-cop {
-    color: black;
-    font-weight: 100;
-    font-size: 16px;
+  &-b {
+    height: fit-content;
+    @include flex;
+    justify-content: space-between;
+    & .b {
+      @include flex-column;
+      height: fit-content;
+      & p {
+        color: $textcolor2;
+        font-size: 20px;
+      }
+      & img {
+        height: auto;
+      }
+      & h4 {
+        color: white !important;
+      }
+    }
   }
 }

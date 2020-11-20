@@ -2,7 +2,7 @@
 <html lang="">
   <head>
     <meta charset="utf-8" />
-    <title>LN</title>
+    <title>fn</title>
     <meta name="description" content="LN" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="images/favicon.png" />
@@ -19,347 +19,315 @@
   <body>
     <header class="header">
       <div class="main-menu ">
+        <img src="./images/src/Logo.svg" alt="logo" />
+        <div class="dropdown">
+          <a class="btn "  role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><img src="./images/src/Menu.png" alt="">
+           
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="javascript://0" onclick="slowScroll('#tec')">expertise</a>
+      <a class="dropdown-item" href="javascript://0" onclick="slowScroll('#env')">about us</a>
+      <a class="dropdown-item" href="javascript://0" onclick="slowScroll('#ed')">insights</a>
+      <a class="dropdown-item" href="javascript://0" onclick="slowScroll('#new')">join us</a>
+      
+      <a class="dropdown-item" href="javascript://0" onclick="slowScroll('#com')">contact</a>
+          </div>
+        </div>
         <a
           class="menu-link active"
           href="javascript://0"
           onclick="slowScroll('#de')"
-          >Данные</a
+          >home</a
         >
         <a class="menu-link" href="javascript://0" onclick="slowScroll('#tec')"
-          >Технологии</a
+          >expertise</a
         >
         <a class="menu-link" href="javascript://0" onclick="slowScroll('#env')"
-          >Иенвайромент</a
+          >about us</a
         >
         <a class="menu-link" href="javascript://0" onclick="slowScroll('#ed')"
-          >Обучение</a
-        >
-        <a class="menu-link" href="javascript://0" onclick="slowScroll('#sp')"
-          >Сопровождение</a
+          >insights</a
         >
         <a class="menu-link" href="javascript://0" onclick="slowScroll('#new')"
-          >Новости</a
+          >join us</a
         >
+
         <a class="menu-link" href="javascript://0" onclick="slowScroll('#com')"
-          >Комьюнити</a
+          >contact</a
         >
       </div>
     </header>
     <section class="data" id="de">
-      <img
-        class="data-img"
-        src="images/src/build.jpg"
-        alt="headBuild"
-        width="100%"
-        height="50%"
-      />
-      <div class="data__time">
-        <div class="container">
-          <h1>
-            Мы ценим время, поэтому собираем все самое важное в одном месте.
-          </h1>
-        <script id="timer" src="//megatimer.ru/get/2d1bf449885aa1d917ed5a44382b546e.js"></script>
-          <h4>
-            “Успех в торговле приходит от хорошего знания рынков и еще лучшего
-            знания самих себя.”
-          </h4>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/src/az.png" class="d-block w-100" alt="..." />
+            <div class="data__time">
+              <h1>
+                Personal Financial Consultant
+              </h1>
+
+              <h2>
+                Helping you saving money on utility bills
+              </h2>
+
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/src/br.png" class="d-block w-100" alt="..." />
+            <div class="data__time">
+              <h1>
+                Personal Financial Consultant
+              </h1>
+
+              <h2>
+                Helping you saving money on utility bills
+              </h2>
+
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
         </div>
-     
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
 
     <section class="technologies" id="tec">
       <div class="container">
-        <hr />
+        <div class="technologies-p">
+          <h1>
+            Welcome to Pesonal Financial Consultant
+          </h1>
+
+          <p>
+            Our aim is to procure the best possible energy solutions for our
+            clients whilst maintaining strong relationships with our suppliers.
+            Enabling us to provide a quality service, based on value and trust.
+          </p>
+          <p>
+            You choose the contract that’s right for you and Jim Morrison
+            Utilities Consultant will take care of every requirement from
+            negotiation to overall management of your contract from beginning to
+            end, saving you time, hassle and money.
+          </p>
+          <p>
+            We will take the hassle out of switching by listening to your needs
+            and negotiating the best value contract on your behalf, saving you
+            up to 25% of your energy costs in the first year alone.
+          </p>
+          <p>
+            It’s sometimes easy to forget when your energy contract is up for
+            renewal, but getting rolled over onto a standard tariff can be
+            costly.
+          </p>
+          <p>
+            To ensure you don’t get rolled over into a new, more expensive
+            energy contract, just complete the form and we will be in touch.
+          </p>
+          <p>
+            We can contact you before your termination date to make sure you
+            don’t get rolled over and secure your business the best possible
+            deal, allowing a seamless transfer at the end of the contract from
+            the old to new supplier, or sometimes even the same supplier but a
+            better deal.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="enviroment" id="env">
         <h2>
-          Все, что у роботов получается быстрее и дешевле, в итоге начнут делать
-          роботы.
+          Our areas of expertise
         </h2>
         <div class="data__box tec">
           <div class="data__box-d">
+            <div class="data__box-d mg">
+              <img src="./images/src/free.png" alt="" />
+            </div>
+            <h4>Free consultation</h4>
+            <hr />
             <p>
-              Мы не навязываем будущее, мы адаптируем его для профессионалов,
-              внедряя самые передовые тренды финтеха и IT. Уже сейчас мы
-              используем алгоритмы машинного обучения, включая нейросети, для
-              прогнозирования движения рынков. Наши сигналы отличаются высокой
-              точностью и радуют пользователей оптимальной доходностью.
+              Our advice and consultation is free.
             </p>
-          </div>
-          <div class="data__box-d">
-            <p>
-              Мы также стремимся максимально автоматизировать торговые практики
-              и рутины трейдеров, ведь одна из основных задач платформы Alpari —
-              вывести работу с финансовыми рынками на качественно новый уровень.
-            </p>
-          </div>
-          <div class="data__box-d">
-            <p>
-              Свяжитесь с нашим консультантом, чтобы узнать больше об
-              использовании новых технологий на платформе Alpari.
-            </p>
-            <button
-              type="button"
-              class="btn btn-outline-dark"
-              data-toggle="modal"
-              data-target="#exampleModal"
-            >
-              cвязаться
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="enviroment" id="env">
-      <div class="container">
-        <div class="enviroment-box">
-          <h1>
-            “Бытие определеяет сознание.”
-          </h1>
-          <div class="data__box-d">
-            <p>
-              При создании оптимальной рабочей среды для трейдеров мы
-              руководствуемся двумя принципами: простотой и практичностью
-              пользовательского опыта. Мы собрали в рабочем инструментарии
-              платформы все самое необходимое для профессионального технического
-              анализа. Пользователям удобно судить о поведении цены, когда все
-              под рукой.
-            </p>
+            <h4 class="orange">Learn more</h4>
           </div>
 
           <div class="data__box-d">
+            <div class="data__box-d mg">
+              <img src="./images/src/hs.png" alt="" />
+            </div>
+            <h4>Without payment</h4>
+            <hr />
             <p>
-              На Alpari вы также можете провести глубокий анализ своих
-              портфелей. Система, оснащенная искусственным интеллектом,
-              позволяет выявить слабые звенья и диверсифицировать риски.
+              All our funding and commissions are paid by the suppliers, which
+              ...
             </p>
+
+            <h4 class="orange">Learn more</h4>
+          </div>
+          <div class="data__box-d">
+            <div class="data__box-d mg">
+              <img src="./images/src/hand_heart.png" alt="" />
+            </div>
+            <h4>Cheapest rates</h4>
+            <hr />
+            <p>
+              Our service is 100% impartial; ensuring we can find the cheapest
+              rates and tariffs for you.
+            </p>
+
+            <h4 class="orange">Learn more</h4>
+          </div>
+          <div class="data__box-d">
+            <div class="data__box-d mg">
+              <img src="./images/src/f.png" alt="" />
+            </div>
+            <h4>Best prices and services</h4>
+            <hr />
+            <p>
+              We can compare rates and tariffs from a range of suppliers to help your business take advantage of the best prices and
+              services.
+            </p>
+
+            <h4 class="orange">Learn more</h4>
           </div>
         </div>
-        <h4 class="comunity-cop">Интересно?</h4>
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-toggle="modal"
-          data-target="#exampleModal"
-        >
-          Регистрация
-        </button>
-      </div>
-    </section>
-<div class="container">
+      </section>
+    </div>
     <section class="education" id="ed">
-     
-        <img src="./images/src/book.jpg" alt="book" />
-        <div class="education-box">
-          <h2>
-            “Тренировка не приводит к идеальным результатам, она приводит к
-            стабильным результатам.”
-          </h2>
-
-          <p>
-            При создании оптимальной рабочей среды для трейдеров мы
-            руководствуемся двумя принципами: простотой и практичностью
-            пользовательского опыта. Мы собрали в рабочем инструментарии
-            платформы все самое необходимое для профессионального технического
-            анализа. Пользователям удобно судить о поведении цены, когда все под
-            рукой.
-          </p>
-
-          <p>
-            На Alpari вы также можете провести глубокий анализ своих портфелей.
-            Система, оснащенная искусственным интеллектом, позволяет выявить
-            слабые звенья и диверсифицировать риски.
-		  </p>
-		<h4 class="comunity-cop">Интересно?</h4>
-		<div class="buttons">
-		<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
-			Пройти тест
-		</button>
-		<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
-			Записаться на курс
-		</button></div>
-        </div>
-        
+      <div class="container">
+        <h2>
+          PFC has led some of the largest and most complex integration and
+          separation programmes within the sector during the past ten years.
+        </h2>
       </div>
     </section>
 
-    <section class="sopr" id="sp">
-      <h1>
-        “Всякий раз, когда я вхожу в позицию, я знаю, где стоит мой стоп.”
-      </h1>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./images/src/pros-and-cons.png"
-              class="d-block w-10"
-              alt="..."
-            />
-            <p>
-              Мы предлагаем услуги профессиальных трейдеров и предоставляем
-              возможности вступления в ряд закрытых хедж-фондов. Плаформа Alpari
-              выструпает посредником для формирования доверительных партнерских
-              отношений между всеми сторонами.
-            </p>
-          </div>
-
-          <div class="carousel-item">
-            <img
-              src="./images/src/sponsor.png"
-              class="d-block w-10"
-              alt="money"
-            />
-            <p>
-              Трейдинг — высокодоходная инвестиционная практика с большими
-              рисками. Допустим, у вас есть желание вступить в игру и получить
-              сверхприбыль, но времени или навыков лично заниматься торгами не
-              хватает.
-            </p>
-          </div>
-        </div>
-      </div>
-      <h4>
-        Для получения более детальной информации об это заполните форму:<button
-          type="button"
-          class="btn btn-outline-dark"
-          data-toggle="modal"
-          data-target="#exampleModal"
-        >
-          форма
-        </button>
-      </h4>
-    </section>
     <section class="news" id="new">
       <div class="container">
-        <div class="news-box">
-          <div class="data__box new">
-            <h1>
-              “Цена начинает реагировать задолго до новостей, новости или плохие
-              отчеты только усугубляют тренд.”
-            </h1>
-            <p>
-              Мир информационно перегружен, но для успешного трейдинга нужно
-              быть в курсе всего. Поэтому мы уделяем особое внимание новостному
-              разделу Alpari. Для специального ежедневного дайджеста наши
-              редакторы делают подборку экономических, финансовых и
-              бизнес-новостей со всего мира. Обзоры, аналитика, мнения — выжимки
-              главного в доступной форме и без воды. Вы узнаете о главных
-              событиях дня первыми через канал, который удобен именно для вас.
-            </p>
-
-            <div class="news-soc">
-              <a href="https://instagram.com"
-                ><img src="./images/src/mail.png" alt=""
-              /></a>
-              <a href="https://facebook.com"
-                ><img src="./images/src/facebook.png" alt=""
-              /></a>
-              <a href="https://telegram.com"
-                ><img src="./images/src/telegram.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="comunity" id="com">
-      <img
-        class="comunity-img"
-        src="images/src/foot.jpg"
-        alt="headBuild"
-        width="100%"
-      />
-      <div class="data__time ft">
-        <h4 style="background:white;border-radius:6px; padding:1%;">
-          Нас определяет круг общения.
-        </h4>
-        <div class="data__time-box  ft">
-          <p>
-            Качество профессионального общения серьезно влияет на наши
-            достижения в работе. Поэтому Alpari целенаправленно развивает
-            сообщество трейдеров таким образом, чтобы сами участники были
-            заинтересованы в создании эффективного нетворкинга и обмене полезным
-            контентом. У вас есть мнение, гипотезы, экспертиза и вы хотите ею
-            делиться, формируя свою репутацию и зарабатывая рейтинги? Тогда вам
-            у нас понравится.
-          </p>
-        </div>
-        <h4 class="comunity-cop">Комьюнити Alpari ждет вас!</h4>
-
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-toggle="modal"
-          data-target="#exampleModal"
-        >
-          присоединиться
-        </button>
-      </div>
-    </section>
-
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="news-form">
+          <h1>Contact us</h1>
+          <div class="news-form__f">
             <form>
               <div class="form-group">
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1"
-                    >Введите форму заявки</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-                <label for="exampleInputEmail1">Email адрес</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <small id="emailHelp" class="form-text text-muted"
-                  >Введите пожалуйста действительный адрес электронной
-                  почты</small
+                <h3>free no obligation</h3>
+                <label for="formGroupExampleInput"
+                  >Your First Name (required)</label
                 >
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Пароль</label>
                 <input
-                  type="password"
+                  type="text"
                   class="form-control"
-                  id="exampleInputPassword1"
+                  id="formGroupExampleInput"
                 />
-              </div>
-              <div class="form-group form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Запомнить</label
+
+                <label for="formGroupExampleInput"
+                  >Your Surname (required)</label
                 >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                />
+                <label for="inputEmail4">Your Email(required)</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+                <label for="inputPhone">Your Mobile Phone(required)</label>
+                <input type="phone" class="form-control" id="inputPhone" />
+                <label for="exampleFormControlTextarea1"
+                  >Your Enquiry</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                ></textarea>
+                
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+            
+                  Read more
+                </button></div>
               </div>
-              <button type="submit" class="btn btn-outline-dark">Ok</button>
             </form>
           </div>
         </div>
       </div>
-    </div>
+      <img src="../images/src/korea.png" alt="" />
+    </section>
+    <section class="comunity" id="com">
+      <div class="container ">
+        <div class="comunity-a"><h2>Get in touch</h2></div>
+
+        <div class="comunity-b">
+          <div class="comunity-b b">
+            <p>
+              <img src="./images/src/loc.png" alt="build" />
+              PFC Business Consulting Ltd, one Lochrin Square, 92
+              Fountainbridge, Edinburgh EH3 9QA
+            </p>
+            <p>
+              <img src="./images/src/loc.png" alt="build" />
+              PFC Business Consulting Ltd, 85 Great Portland St, Marylebone,
+              London W1W 7LT
+            </p>
+          </div>
+          <div class="comunity-b b">
+            <p>
+              <img src="./images/src/phone.png" alt="tel" />tel: 0845 324 0671
+            </p>
+            <p style="color:#ffb039;">
+              <img
+                src="./images/src/env.png"
+                alt="mes"
+              />info@pfcconsulting.co.uk
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,8 +1,8 @@
 // USER VARIABLES SECTION
 
-$accent: orange; // Accent Color
-$fontsize: 16px; // Body Font Size
-$textcolor: rgb(8, 129, 119);
+$accent: #ffb039; // Accent Color
+$fontsize: 18px; // Body Font Size
+$textcolor: #1c3a74;
 $textcolor2: #fff; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: Roboto, sans-serif; // Roboto Font Family
@@ -49,168 +49,111 @@ $gutter: $grid-gutter-width;
   "../fonts/roboto-bolditalic-webfont.woff2"
 );
 
-@media (min-width: 320px) {
-  body {
-    .comunity {
-      .data__time.ft {
-        top: -5px;
-      }
-    }
-    width: 770px;
-    & p {
-      font-size: 12px;
-    }
-    & h1 {
-      font-size: 18px !important;
-    }
-  }
-  .data__box-d {
-    overflow: auto;
-  }
-  .btn {
-    font-size: 20px;
-  }
-}
 @media (max-width: 576px) {
   body {
     width: 900px;
     & p {
-      font-size: 12px;
+      font-size: 18px;
     }
     & h1 {
-      font-size: 18px !important;
+      font-size: 45px !important;
     }
-  }
-  .data__box-d {
-    overflow: auto;
-  }
-  #timer2d1bf449885aa1d917ed5a44382b546e {
-    display: none;
+    .comunity {
+      height: fit-content !important;
+    }
   }
 }
 
 // Средние девайсы («таблетки», >= 768px)
 @media (max-width: 768px) {
-  .news-box {
-    & h1 {
-      width: 100% !important;
-    }
-    & p {
-      width: 100% !important;
-    }
+  & p {
+    font-size: 18px !important;
   }
-  .comunity-img {
-    height: fit-content;
+  .comunity {
+    height: fit-content !important;
   }
-  .main-menu {
-    flex-direction: row !important;
-    padding: 0px 3px !important;
-    & a {
-      font-size: 8px;
-      padding: 0 3px !important;
-    }
+  body {
+    top: 3%;
   }
-  & h2 {
+  .orange {
+    color: $accent !important;
+  }
+  h3 {
     font-size: 16px !important;
   }
-  .education {
-    flex-flow: wrap;
-    &-box {
-      width: 100% !important;
-    }
+  h2 {
+    font-size: 18px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  .dropdown {
+    display: block !important;
   }
 
-  .enviroment-box {
-    flex-wrap: wrap;
-    & h1 {
-      font-size: 18px !important;
-    }
+  hr {
+    display: none;
   }
-
+  .comunity-b {
+    display: flex !important;
+    flex-direction: column !important;
+  }
   .data__box {
     flex-wrap: wrap !important;
+    height: 100% !important;
   }
   .data__time {
     width: 100% !important;
-    & h1 {
-      background: #f6f6f6;
-      opacity: 0.8;
-    }
-    & h4 {
-      background: #f6f6f6;
-      opacity: 0.8;
-    }
   }
-  .comunity {
-    & p {
-      background: #f6f6f6;
-      opacity: 0.8;
-    }
-  }
-  h1 {
-    font-size: 18px !important;
-  }
+
   body {
     width: 100%;
     & p {
-      font-size: 12px !important;
+      font-size: 14px !important;
     }
   }
   .data__box-d {
-    overflow: auto;
     width: 100% !important;
+    height: fit-content !important;
   }
   .btn {
     font-size: 20px;
+  }
+  .education {
+    height: 30% !important;
+    & h2 {
+      width: fit-content;
+    }
+  }
+  .main-menu .menu-link {
+    display: none;
+  }
+  .news-form {
+    width: 80% !important;
+    margin: 0 auto;
   }
 }
 
 // Большие девайсы (десктопы, >= 992px)
-@media (min-width: 992px) {
-  body {
-    width: 1200px;
-    & p {
-      font-size: 12px;
-    }
-    & h1 {
-      font-size: 20px !important;
-    }
-  }
-  .data__box-d {
-    overflow: auto;
-  }
-  .btn {
-    font-size: 20px;
-  }
-}
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
-@media (min-width: 1200px) {
-  body {
-    width: 1500px;
-    & p {
-      font-size: 14px;
-    }
-    & h1 {
-      font-size: 30px !important;
-    }
-  }
-  .data__box-d {
-    overflow: auto;
-  }
-}
+
 @media (min-width: 1500px) {
   body {
     width: 2000px;
     & p {
-      font-size: 16px;
+      font-size: 20px;
     }
     & h1 {
-      font-size: 30px !important;
+      font-size: 50px !important;
     }
   }
   .data__box-d {
-    overflow: auto;
+    height: 400px !important;
+    & .mg {
+      height: 60px !important;
+      width: 70px !important;
+    }
   }
 }
 // GENERAL DOCUMENT STYLES
@@ -244,21 +187,26 @@ body {
   overflow-x: hidden;
   color: $textcolor;
   h1 {
+    color: $textcolor2;
     margin-top: 5%;
-    color: $textcolor;
-    font-size: 30px;
-    text-transform: uppercase;
+
+    font-size: 50px;
   }
   h2 {
     margin-top: 5%;
-    color: $textcolor;
-    font-size: 24px;
-    text-transform: uppercase;
+    color: $textcolor2;
+    font-size: 25px;
+  }
+  h3 {
+    margin-top: 5%;
+    height: 10%;
+    font-size: 20px;
   }
   h4 {
-    font-size: 20px;
+    height: auto;
+    font-size: 23px;
     font-weight: 600;
-    color: $textcolor;
+    color: $textcolor !important;
   }
   a {
     &:hover {
@@ -267,12 +215,12 @@ body {
     }
     p {
       z-index: 2000;
+      font-size: $fontsize;
+      color: black;
     }
   }
   hr {
     width: 20%;
-    border-bottom: 2px solid $textcolor;
-    margin: 0 auto;
-    margin-top: 10%;
+    border-bottom: 2px solid $accent;
   }
 }

@@ -11,7 +11,7 @@ function slowScroll(id) {
     {
       scrollTop: $(id).offset().top - offset
     },
-    30000
+    300
   );
   return false;
 }
